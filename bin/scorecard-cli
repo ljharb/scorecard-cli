@@ -1,0 +1,24 @@
+#!/usr/bin/env node
+
+'use strict';
+
+const { inspect, parseArgs } = require('util');
+
+const { positionals } = parseArgs({ allowPositionals: true });
+
+if (positionals.length !== 1) {
+	console.error('Expected exactly one positional argument: the repository slug (e.g. "nvm-sh/nvm")');
+	process.exit(1);
+}
+
+// module.exports assignment is solely for testing.
+module.exports = import('@nodesecure/ossf-scorecard-sdk').then(async ({ result }) => {
+	const results = await result(positionals[0]);
+
+	const output = inspect(results, { colors: process.env.TERM !== 'dumb', depth: Infinity });
+
+	console.log(output);
+}).catch((e) => {
+	console.error(e);
+	process.exit(1);
+});
