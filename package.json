@@ -1,0 +1,30 @@
+{
+	"name": "scorecard-cli",
+	"version": "0.0.0",
+	"description": "A CLI for OpenSSF Scorecard data.",
+	"main": false,
+	"exports": {
+		"./package.json": "./package.json"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ljharb/scorecard-cli.git"
+	},
+	"keywords": [
+		"openssf",
+		"ossf",
+		"scorecard",
+		"cli",
+		"scorecards",
+		"security"
+	],
+	"author": "Jordan Harband <ljharb@gmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/ljharb/scorecard-cli/issues"
+	},
+	"homepage": "https://github.com/ljharb/scorecard-cli#readme"
+}
