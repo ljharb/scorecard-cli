@@ -38,7 +38,7 @@
 	},
 	"homepage": "https://github.com/ljharb/scorecard-cli#readme",
 	"dependencies": {
-		"@nodesecure/ossf-scorecard-sdk": "^1.1.1"
+		"@nodesecure/ossf-scorecard-sdk": "^3.2.1"
 	},
 	"devDependencies": {
 		"@ljharb/eslint-config": "^21.1.1",
@@ -53,7 +53,7 @@
 		"tape": "^5.7.5"
 	},
 	"engines": {
-		"node": "^18.16.0 || ^20.2.0"
+		"node": "^20.13.1 || >= 22"
 	},
 	"auto-changelog": {
 		"output": "CHANGELOG.md",
